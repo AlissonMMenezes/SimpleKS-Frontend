@@ -38,6 +38,11 @@ import axios from 'axios'
 
 </script>
 <style scoped>
+img {
+    width: 100% important! ; 
+}
+
+
 .single_post {
     float: left;
     width: 100%;
@@ -68,10 +73,5 @@ p {
 p {
     line-height: 150%;
 }
-
-img {
-    width: 100%;
-}
-
 
 </style>
