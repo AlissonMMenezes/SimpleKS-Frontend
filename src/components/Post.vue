@@ -29,8 +29,9 @@ export default {
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import axios from 'axios'
-</script>
 
+</script>
+<script data-ad-client="ca-pub-3486974141505090" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <style scoped>
 .single_post {
     float: left;
