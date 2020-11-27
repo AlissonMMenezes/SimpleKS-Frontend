@@ -70,11 +70,7 @@ p {
 }
 
 img {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    display: block;
-    clear: both;
-    float: none;
+    width: 100%;
 }
 
 
