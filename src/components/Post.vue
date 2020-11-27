@@ -22,6 +22,12 @@ export default {
       console.log(window.location.pathname)
       axios.get('/posts/'+window.location.pathname.replace("/",""))
       .then(response => (this.info = response.data))
+
+      let adsense = document.createElement('script')
+      adsense.setAttribute('src', 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')
+      adsense.setAttribute("data-ad-client","ca-pub-3486974141505090")
+      adsense.setAttribute("async", true)
+      document.head.appendChild(adsense)
   }
 }
 
@@ -31,7 +37,6 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import axios from 'axios'
 
 </script>
-<script data-ad-client="ca-pub-3486974141505090" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <style scoped>
 .single_post {
     float: left;
