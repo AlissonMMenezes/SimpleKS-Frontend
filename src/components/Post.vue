@@ -37,12 +37,12 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import axios from 'axios'
 
 </script>
-<style scoped>
+<style >
 img {
-    width: 100% important! ; 
+    width: 100% !important ; 
+    height: 100% !important;
+
 }
-
-
 .single_post {
     float: left;
     width: 100%;
