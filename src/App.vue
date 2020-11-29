@@ -20,7 +20,6 @@ import Headers from './components/Headers.vue'
 import Sidebar from './components/Sidebar.vue'
 import Subscribe from './components/Subscribe.vue'
 
-
 export default {
   name: 'App',
   components: {

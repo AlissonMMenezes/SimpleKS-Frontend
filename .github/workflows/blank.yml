@@ -22,6 +22,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+
+      - name: "Replace Analytics ID"
+        run: sed -i "s/GOOGLE_ANALYTICS_ID/${{secrets.GCP_ANALYTICS_ID}}/g" $GITHUB_WORKSPACE/main.js
       
       - name: Yarn CLI        
         uses: CultureHQ/actions-yarn@v1.0.1

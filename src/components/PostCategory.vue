@@ -1,7 +1,7 @@
 <template>
     <div>
         <article class="post excerpt" v-for="p in info.posts" :key="p">
-            <h2 class="title"><a v-bind:href="p.post_name">{{p.title}}</a> </h2>
+            <h2 class="title"><a v-bind:href="'/'+p.post_name">{{p.title}}</a> </h2>
             <span class="post-content" v-html="p.content">                
             </span>        
         </article>

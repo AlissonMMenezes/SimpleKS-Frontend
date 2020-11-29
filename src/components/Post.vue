@@ -35,7 +35,7 @@ export default {
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import axios from 'axios'
-
+import 'prism-es6/components/prism-python';
 </script>
 <style >
 img {
