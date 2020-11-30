@@ -73,8 +73,10 @@ p {
 p {
     line-height: 150%;
 }
-white-space: pre-wrap !important; 
-word-wrap: break-word !important;
-font-family: inherit !important;
+body {
+    white-space: pre-wrap !important; 
+    word-wrap: break-word !important;
+    font-family: inherit !important;
+}
 
 </style>
