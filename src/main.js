@@ -4,7 +4,6 @@ import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import axios from 'axios' 
 import VueRouter from 'vue-router'
 import VueAnalytics from 'vue-analytics';
-import VueCodeHighlight from 'vue-code-highlight';
 
 // Components load
 import Homepage from './components/Homepage.vue'
@@ -16,7 +15,6 @@ import PostSearch from './components/PostSearch.vue'
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 Vue.use(VueRouter)
-Vue.use(VueCodeHighlight)
 Vue.use(VueAnalytics, {
   id: 'GOOGLE_ANALYTICS_ID',
   router
