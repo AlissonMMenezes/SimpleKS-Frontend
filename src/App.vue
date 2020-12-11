@@ -26,7 +26,10 @@ export default {
     Headers,
     Sidebar,
     Subscribe
-  }
+  },
+  MetaInfo: {
+      title: 'Alisson Machado',
+    }
 }
 </script>
 <style scoped>
