@@ -18,9 +18,10 @@ export default {
           info : null
       }    
   },
-  mounted:function(){  
-      console.log(window.location.pathname)
-      axios.get('/posts/'+window.location.pathname.replace("/",""))
+  mounted:function(){
+      var post_name = String(window.location.pathname).replaceAll("/","")  
+      console.log(post_name)
+      axios.get('/posts/'+post_name)
       .then(response => (this.info = response.data))
 
       let adsense = document.createElement('script')
