@@ -42,9 +42,9 @@ export default {
           ).then(function(response){
             return self.message = response.data.content
             
-        }).catch(function(response){            
-            return response.data
-            
+        }).catch(function(response){
+            console.log(response.message)                 
+            return self.message = "Invalid Domain!"            
         })
         console.log(this.message)
         this.$bvModal.show("modal-1")
