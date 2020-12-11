@@ -4,8 +4,9 @@ import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import axios from 'axios' 
 import VueRouter from 'vue-router'
 import VueAnalytics from 'vue-analytics';
-import 'prismjs'
-import 'prismjs/themes/prism.css'
+import VueHighlightJS from 'vue-highlight.js';
+import 'vue-highlight.js/lib/allLanguages'
+import 'highlight.js/styles/default.css';
 
 // Components load
 import Homepage from './components/Homepage.vue'
@@ -13,7 +14,7 @@ import Post from './components/Post.vue'
 import PostCategory from './components/PostCategory.vue'
 import PostSearch from './components/PostSearch.vue'
 
-
+Vue.use(VueHighlightJS);
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 Vue.use(VueRouter)

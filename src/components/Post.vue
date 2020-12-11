@@ -2,7 +2,7 @@
     <div>      
       <div class="single_post">
           <h2 class="single-title">{{info.title}}</h2>
-          <article id="content" class="post-single-content box mark-links" v-html="info.content">
+          <article id="content" class="post-single-content box mark-links" v-html="info.content">               
           </article>   
       </div>     
     </div>
@@ -35,14 +35,8 @@ export default {
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import axios from 'axios'
-import 'prism-es6/components/prism-python';
 </script>
 <style >
-img {
-    width: 100% !important ; 
-    height: 100% !important;
-
-}
 .single_post {
     float: left;
     width: 100%;
