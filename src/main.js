@@ -4,6 +4,8 @@ import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import axios from 'axios' 
 import VueRouter from 'vue-router'
 import VueAnalytics from 'vue-analytics';
+import 'prismjs'
+import 'prismjs/themes/prism.css'
 
 // Components load
 import Homepage from './components/Homepage.vue'

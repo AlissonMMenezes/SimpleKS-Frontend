@@ -12,9 +12,11 @@
     "bootstrap": "^4.5.3",
     "bootstrap-vue": "^2.18.1",
     "core-js": "^3.6.5",
+    "prismjs": "^1.22.0",
     "vue": "^2.6.11",
     "vue-analytics": "^5.22.1",
     "vue-code-highlight": "^0.7.6",
+    "vue-prism-component": "^1.2.0",
     "vue-router": "^3.4.8"
   },
   "devDependencies": {
