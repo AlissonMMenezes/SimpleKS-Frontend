@@ -14,6 +14,8 @@ import Post from './components/Post.vue'
 import PostCategory from './components/PostCategory.vue'
 import PostSearch from './components/PostSearch.vue'
 
+axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
+
 Vue.use(VueHighlightJS);
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
