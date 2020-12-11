@@ -27,7 +27,7 @@ export default {
     Sidebar,
     Subscribe
   },
-  MetaInfo: {
+  metaInfo: {
       title: 'Alisson Machado',
     }
 }
