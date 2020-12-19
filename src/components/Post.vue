@@ -1,11 +1,13 @@
 <template>
-    <el-card style="margin-top:10px;">
-        <div slot="header" class="clearfix">
-            <span><h5>{{info.title}}</h5></span>
-        </div>       
-        <div v-html="info.content">
-        </div>     
-    </el-card>
+    <div style="margin-top: 40px;">
+        <el-card style="margin-top:10px;">
+            <div slot="header" class="clearfix">
+                <span><h5>{{info.title}}</h5></span>
+            </div>       
+            <div v-html="info.content">
+            </div>     
+        </el-card>
+    </div>
 </template>
 
 
