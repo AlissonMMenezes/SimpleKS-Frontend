@@ -1,22 +1,23 @@
 <template>
-    <div>
-        <div class="p-3">
-            <h4 id="sidebar-no-header-title">Inscreva-se</h4>
-            <b-row class="my-1">            
-                <b-col sm="9">
-                <b-form-input id="input-none" :state="null" v-on:keyup.enter="sendSubscription" v-model="email" placeholder="Seu email aqui"></b-form-input>
-                </b-col>
-            </b-row>
-            <b-row class="my-1">
-                <b-col sm="9">
-                <b-button v-on:click="sendSubscription">Cadastrar</b-button>
-                </b-col>         
-            </b-row>
-        </div>
-        <b-modal id="modal-1" title="Message">
-            <p class="my-4" ref="modalmessage">{{message}}</p>
-        </b-modal>     
-    </div>   
+    <el-col style="margin-top:30px;">
+        <el-card>
+            <div slot="header" class="clearfix">
+                <span><h5>Inscreva-se</h5></span>
+            </div>
+            <div>
+                <el-row>            
+                    <el-col sm="9">
+                    <el-input id="input-none" :state="null" v-on:keyup.enter="sendSubscription" v-model="email" placeholder="Seu email aqui"></el-input>
+                    </el-col>
+                </el-row>
+                <el-row >
+                    <el-col sm="9">
+                    <el-button v-on:click="sendSubscription">Cadastrar</el-button>
+                    </el-col>         
+                </el-row>
+             </div>
+        </el-card>           
+    </el-col>   
     
 </template>
 
@@ -47,10 +48,32 @@ export default {
             return self.message = "Invalid Domain!"            
         })
         console.log(this.message)
-        this.$bvModal.show("modal-1")
+        this.$alert(self.message,"Mensagem",{confirmButtonText:"Ok"})
       }      
   }
   
 }
 import axios from 'axios'
 </script>
+<style scoped>
+.text {
+    font-size: 14px;
+  }
+
+  .item {
+    margin-bottom: 18px;
+  }
+
+  .clearfix:before,
+  .clearfix:after {
+    display: table;
+    content: "";
+  }
+  .clearfix:after {
+    clear: both
+  }
+
+  .box-card {
+    width: 480px;
+  }
+</style>

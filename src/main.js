@@ -1,12 +1,14 @@
 import Vue from 'vue'
 import App from './App.vue'
-import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import axios from 'axios' 
 import VueRouter from 'vue-router'
 import VueAnalytics from 'vue-analytics';
 import VueHighlightJS from 'vue-highlight.js';
 import 'vue-highlight.js/lib/allLanguages'
 import 'highlight.js/styles/default.css';
+import VueMeta from 'vue-meta';
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 
 // Components load
 import Homepage from './components/Homepage.vue'
@@ -17,8 +19,8 @@ import PostSearch from './components/PostSearch.vue'
 axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
 
 Vue.use(VueHighlightJS);
-Vue.use(BootstrapVue)
-Vue.use(IconsPlugin)
+Vue.use(ElementUI);
+Vue.use(VueMeta);
 Vue.use(VueRouter)
 Vue.use(VueAnalytics, {
   id: 'GOOGLE_ANALYTICS_ID',

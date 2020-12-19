@@ -1,11 +1,11 @@
 <template>
-    <div>      
-      <div class="single_post">
-          <h2 class="single-title">{{info.title}}</h2>
-          <article id="content" class="post-single-content box mark-links" v-html="info.content">               
-          </article>   
-      </div>     
-    </div>
+    <el-card style="margin-top:10px;">
+        <div slot="header" class="clearfix">
+            <span><h5>{{info.title}}</h5></span>
+        </div>       
+        <div v-html="info.content">
+        </div>     
+    </el-card>
 </template>
 
 

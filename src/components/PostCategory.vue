@@ -1,10 +1,12 @@
 <template>
-    <div>
-        <article class="post excerpt" v-for="p in info.posts" :key="p">
-            <h2 class="title"><a v-bind:href="'/'+p.post_name">{{p.title}}</a> </h2>
-            <span class="post-content" v-html="p.content">                
-            </span>        
-        </article>
+    <div style="margin-top: 40px;">
+        <el-card v-for="p in info.posts" :key="p" style="margin-top: 10px;">
+            <div slot="header" class="clearfix">
+                <span><router-link :to="'/'+p.post_name">{{p.title}}</router-link></span>
+            </div>
+            <div :key="o" class="text item" v-html="p.content">
+            </div>
+        </el-card>           
     </div>
 </template>
 

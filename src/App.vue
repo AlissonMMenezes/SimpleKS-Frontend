@@ -1,18 +1,23 @@
 <template>
-  <div id="app">
-    <Headers />
-    <b-container class="bv-example-row">
-          <b-row class="justify-content-md-left">
-              <b-col col lg="8">
-                <router-view></router-view>
-              </b-col>
-              <b-col col lg="4">
-                <Subscribe />
-                <Sidebar />
-              </b-col>
-          </b-row>         
-      </b-container>    
-  </div>
+  <el-container id="app">
+    <el-header>
+      <Headers />
+    </el-header>    
+    <el-container>
+      <el-aside > 
+        <el-row class="tac">
+          <Subscribe />
+        </el-row>
+        <el-row class="tac">
+          <Sidebar /> 
+        </el-row>
+      </el-aside>
+      <el-main>
+        <router-view></router-view>      
+      </el-main>
+    </el-container>  
+    
+  </el-container>
 </template>
 
 <script>
@@ -33,19 +38,5 @@ export default {
 }
 </script>
 <style scoped>
-h3, #sidebars .widget h3 a {
-font-weight: 600;
-line-height: 20px;
-font-size: 20px;
-color: #000;
-margin: 20px 0 5px 0;
-margin-top: 20px;
-padding: 10px 0;
-padding-top: 10px;
-}
-body {
-white-space: pre-wrap !important; 
-word-wrap: break-word !important;
-font-family: inherit !important;
-}
+
 </style>

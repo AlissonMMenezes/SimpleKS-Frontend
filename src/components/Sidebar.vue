@@ -1,14 +1,14 @@
 <template>
-    <div>        
-        <div class="p-3">
-            <h4 id="sidebar-no-header-title">Categorias</h4>        
-            <nav class="mb-3">
-            <b-nav vertical  v-for="c in info.categories" :key="c"> 
-                <a class="nav-link" v-bind:href="'/category/'+c" tag="b-nav-item">{{c}}</a>             
-            </b-nav>
-            </nav>
-        </div>        
-    </div>  
+    <el-col>
+        <el-card>
+            <div slot="header" class="clearfix">
+                <span><h5>Categorias</h5></span>
+            </div>    
+            <div vertical  v-for="c in info.categories" :key="c" class="text item">
+                <a class="nav-link" v-bind:href="'/category/'+c">{{c}}</a>
+             </div>
+        </el-card>
+    </el-col>
 </template>
 
 <script>
@@ -27,3 +27,25 @@ export default {
 import axios from 'axios'
 
 </script>
+<style scoped>
+.text {
+    font-size: 14px;
+  }
+
+  .item {
+    margin-bottom: 18px;
+  }
+
+  .clearfix:before,
+  .clearfix:after {
+    display: table;
+    content: "";
+  }
+  .clearfix:after {
+    clear: both
+  }
+
+  .box-card {
+    width: 480px;
+  }
+</style>
