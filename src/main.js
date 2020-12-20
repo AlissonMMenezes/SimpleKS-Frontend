@@ -7,6 +7,9 @@ import VueAnalytics from 'vue-analytics';
 import VueHighlightJS from 'vue-highlight.js';
 import 'vue-highlight.js/lib/allLanguages'
 import 'highlight.js/styles/default.css';
+import VueMeta from 'vue-meta';
+
+
 
 // Components load
 import Homepage from './components/Homepage.vue'
@@ -19,6 +22,7 @@ axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
 Vue.use(VueHighlightJS);
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
+Vue.use(VueMeta);
 Vue.use(VueRouter)
 Vue.use(VueAnalytics, {
   id: 'GOOGLE_ANALYTICS_ID',

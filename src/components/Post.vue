@@ -1,11 +1,18 @@
 <template>
-    <div>      
-      <div class="single_post">
-          <h2 class="single-title">{{info.title}}</h2>
-          <article id="content" class="post-single-content box mark-links" v-html="info.content">               
-          </article>   
-      </div>     
-    </div>
+    <b-container style="margin-top: 30px;">
+        <b-card :title="info.title" style="margin-top: 10px;">
+            <b-card-text v-html="info.content">            
+            </b-card-text>
+        </b-card>
+        <b-card-group class="mt-1 grid" v-if="info.layout === 'cards'">
+            <b-card title="Card Title" img-src="https://picsum.photos/600/300/?image=25" img-alt="Image" img-top tag="article" style="max-width: 20rem;" class="mb-2">
+                <b-card-text>
+                Some quick example text to build on the card title and make up the bulk of the card's content.
+                </b-card-text>
+                <b-button href="#" variant="primary">Go somewhere</b-button>
+            </b-card>
+        </b-card-group>    
+    </b-container>  
 </template>
 
 
@@ -19,7 +26,7 @@ export default {
       }    
   },
   mounted:function(){
-      var post_name = String(window.location.pathname).replaceAll("/","")  
+      var post_name = String(window.location.pathname).replaceAll("/","")
       console.log(post_name)
       axios.get('/posts/'+post_name)
       .then(response => (this.info = response.data))

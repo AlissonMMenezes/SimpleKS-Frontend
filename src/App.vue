@@ -1,17 +1,15 @@
 <template>
   <div id="app">
     <Headers />
-    <b-container class="bv-example-row">
-          <b-row class="justify-content-md-left">
-              <b-col col lg="8">
-                <router-view></router-view>
-              </b-col>
-              <b-col col lg="4">
-                <Subscribe />
-                <Sidebar />
-              </b-col>
-          </b-row>         
-      </b-container>    
+    <b-row>
+        <b-col sm="9">
+          <router-view></router-view>
+        </b-col>
+        <b-col sm="3">
+          <Subscribe />
+          <Sidebar />
+        </b-col>
+    </b-row>         
   </div>
 </template>
 

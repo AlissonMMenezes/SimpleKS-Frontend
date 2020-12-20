@@ -1,11 +1,10 @@
 <template>
-    <div>
-        <article class="post excerpt" v-for="p in info.posts" :key="p">
-            <h2 class="title"><a v-bind:href="'/'+p.post_name">{{p.title}}</a> </h2>
-            <span class="post-content" v-html="p.content">                
-            </span>        
-        </article>
-    </div>
+    <b-container style="margin-top: 30px;">
+        <b-card :title="p.title" :sub-title="p.post_date" style="margin-top: 10px;" v-for="p in info.posts" :key="p">
+            <b-card-text v-html="p.content">            
+            </b-card-text>
+        </b-card>
+    </b-container>    
 </template>
 
 

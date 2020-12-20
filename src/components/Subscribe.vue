@@ -1,23 +1,24 @@
 <template>
-    <div>
-        <div class="p-3">
-            <h4 id="sidebar-no-header-title">Inscreva-se</h4>
-            <b-row class="my-1">            
+    <b-container style="margin-top: 30px;">
+        <b-card title="Inscreva-se" sub-title="" style="margin-top: 10px;">
+            <b-card-text>
+                <b-row class="my-1">            
                 <b-col sm="9">
                 <b-form-input id="input-none" :state="null" v-on:keyup.enter="sendSubscription" v-model="email" placeholder="Seu email aqui"></b-form-input>
                 </b-col>
-            </b-row>
-            <b-row class="my-1">
+                </b-row>
+                <b-row class="my-1">
                 <b-col sm="9">
                 <b-button v-on:click="sendSubscription">Cadastrar</b-button>
                 </b-col>         
-            </b-row>
-        </div>
+                </b-row>     
+            </b-card-text>
+        </b-card>
         <b-modal id="modal-1" title="Message">
             <p class="my-4" ref="modalmessage">{{message}}</p>
         </b-modal>     
-    </div>   
-    
+    </b-container>
+   
 </template>
 
 <script>
