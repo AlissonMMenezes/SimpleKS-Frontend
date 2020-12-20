@@ -1,7 +1,6 @@
 <template>
-    <div>
-        
-        <b-navbar toggleable="lg" type="dark" variant="info">
+    <div>        
+        <b-navbar>
             <b-navbar-brand href="/">Alisson Machado</b-navbar-brand>
 
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>

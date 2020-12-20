@@ -10,7 +10,6 @@ import 'highlight.js/styles/default.css';
 import VueMeta from 'vue-meta';
 
 
-
 // Components load
 import Homepage from './components/Homepage.vue'
 import Post from './components/Post.vue'

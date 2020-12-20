@@ -1,5 +1,5 @@
 <template>
-    <b-container style="margin-top: 30px;">
+    <b-container >
         <b-card title="Inscreva-se" sub-title="" style="margin-top: 10px;">
             <b-card-text>
                 <b-row class="my-1">            

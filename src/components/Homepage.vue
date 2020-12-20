@@ -1,11 +1,11 @@
 <template>
-    <b-container style="margin-top: 30px;">
-        <b-card :title="p.title" :sub-title="p.post_date" v-for="p in info.posts" :key="p" style="margin-top: 10px;">
+    <div style="margin-left: 10px;">
+        <b-card :title="p.title" :sub-title="p.post_date" v-for="p in info.posts" :key="p" style="margin-top: 10px; margin-left: 0px;">
             <b-card-text v-html="p.content">            
             </b-card-text>
             <b-button v-bind:href="'/'+p.post_name" variant="outline-primary">Ler mais</b-button>
         </b-card>
-    </b-container>
+    </div>
 </template>
 
 
