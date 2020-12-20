@@ -44,21 +44,6 @@ export default {
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import axios from 'axios'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
 </script>
 <style scoped>
-a {
-    transition: all 0.25s linear;
-    font-size: 14px;
-    color: #333;
-    font-weight: 700;
-    text-align: left;
-    text-decoration: none;
-    padding: 0 20px;
-    line-height: 45px;
-    font-family: 'Roboto', 'helvetica neue', helvetica, arial, sans-serif;
-    display: block;
-}
 </style>
