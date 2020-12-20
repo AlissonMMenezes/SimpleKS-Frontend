@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <Headers />
-    <b-container class="bv-example-row">
-          <b-row class="justify-content-md-left">
-              <b-col col lg="8">
-                <router-view></router-view>
-              </b-col>
-              <b-col col lg="4">
-                <Subscribe />
-                <Sidebar />
-              </b-col>
-          </b-row>         
-      </b-container>    
+    <Headers /> 
+    <sui-grid style="margin-left: 10px;">
+      <sui-grid-row>
+        <sui-grid-column :width="13">
+          <sui-container>
+            <router-view></router-view>
+          </sui-container>          
+        </sui-grid-column>
+        <sui-grid-column :width="2">
+          <Subscribe />
+          <Sidebar /> 
+        </sui-grid-column>  
+      </sui-grid-row>
+    </sui-grid>
   </div>
 </template>
 
@@ -27,25 +29,8 @@ export default {
     Sidebar,
     Subscribe
   },
-  metaInfo: {
-      title: 'Alisson Machado',
-    }
+  metaInfo:{
+    title: "Alisson Machado"
+  } 
 }
 </script>
-<style scoped>
-h3, #sidebars .widget h3 a {
-font-weight: 600;
-line-height: 20px;
-font-size: 20px;
-color: #000;
-margin: 20px 0 5px 0;
-margin-top: 20px;
-padding: 10px 0;
-padding-top: 10px;
-}
-body {
-white-space: pre-wrap !important; 
-word-wrap: break-word !important;
-font-family: inherit !important;
-}
-</style>

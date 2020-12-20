@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="p-3">
+        <!-- <div class="p-3">
             <h4 id="sidebar-no-header-title">Inscreva-se</h4>
             <b-row class="my-1">            
                 <b-col sm="9">
@@ -15,7 +15,7 @@
         </div>
         <b-modal id="modal-1" title="Message">
             <p class="my-4" ref="modalmessage">{{message}}</p>
-        </b-modal>     
+        </b-modal>      -->
     </div>   
     
 </template>

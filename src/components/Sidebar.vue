@@ -1,13 +1,9 @@
 <template>
-    <div>        
-        <div class="p-3">
-            <h4 id="sidebar-no-header-title">Categorias</h4>        
-            <nav class="mb-3">
-            <b-nav vertical  v-for="c in info.categories" :key="c"> 
-                <a class="nav-link" v-bind:href="'/category/'+c" tag="b-nav-item">{{c}}</a>             
-            </b-nav>
-            </nav>
-        </div>        
+    <div>      
+         <sui-menu text vertical>
+            <sui-menu-item header>Categorias</sui-menu-item>
+            <a is="sui-menu-item" v-for="item in info.categories" :key="item" :content="item" v-bind:href="'/category/'+item" />
+        </sui-menu>
     </div>  
 </template>
 

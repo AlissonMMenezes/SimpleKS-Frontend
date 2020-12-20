@@ -32,46 +32,5 @@ export default {
   }
 }
 
-
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
 import axios from 'axios'
 </script>
-<style >
-.single_post {
-    float: left;
-    width: 100%;
-    box-sizing: border-box;
-}
-.single-title {
-    float: left;
-    padding: 0 0 0 0;
-    font-size: 32px;
-    line-height: 1.4;
-    margin: 0;
-}
-
-.post-single-content {
-    font-size: 14px;
-    line-height: 22px;
-    float: left;
-    width: 100%;
-}
-
-div#content {
-    padding-right: 30px;
-}
-
-p {
-    margin-bottom: 20px;
-}
-p {
-    line-height: 150%;
-}
-body {
-    white-space: pre-wrap !important; 
-    word-wrap: break-word !important;
-    font-family: inherit !important;
-}
-
-</style>
