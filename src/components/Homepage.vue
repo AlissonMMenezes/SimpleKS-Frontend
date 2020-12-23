@@ -1,14 +1,29 @@
 <template>
-    <div style="margin-left: 10px;">
-        <b-card :title="p.title" :sub-title="p.post_date" v-for="p in info.posts" :key="p" style="margin-top: 10px; margin-left: 0px;">
-            <b-card-text v-html="p.content">            
-            </b-card-text>
-            <b-button v-bind:href="'/'+p.post_name" variant="outline-primary">Ler mais</b-button>
+    <div style="margin-left: 10px;" >
+        <div v-for="p in info.posts" :key="p" style="margin-left: 10px; float: left; display: block;    " class="overflow-hidden">
+        <b-card  style="margin-top: 10px; max-height: 200px; max-width: 650px;">
+            <b-row no-gutters>            
+            <b-col md="8">
+                <b-card-body>
+                    <b-card-title>
+                        <a v-bind:href="'/'+p.post_name" >{{p.title}}</a>
+                    </b-card-title>
+                    <b-card-sub-title>
+                        {{ p.post_date }}
+                    </b-card-sub-title>
+
+                </b-card-body>
+            </b-col>
+            <b-col md="4">
+                <b-card-img v-if="p.thumbnail != null" :src="p.thumbnail" alt="Image" class="rounded-0" style="wdith: 209.333px; height: 175.283px"></b-card-img>
+                <b-card-img v-else :src="p.category.thumbnail" alt="Image" class="rounded-0"></b-card-img>
+
+            </b-col>
+            </b-row>
         </b-card>
+        </div>
     </div>
 </template>
-
-
 <script>
 export default {
   name: 'Homepage',
@@ -29,27 +44,4 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import axios from 'axios'
 </script>
 <style scoped>
-h2.title {
-    color: #333;
-    font-weight: 400;
-    line-height: 140%;
-    font-size: 25px;
-}
-
-.post-content {
-    font-size: 14px;
-    line-height: 160%;
-    color: #989898;
-}
-.post.excerpt {
-    clear: both;
-    padding: 30px 0;
-    position: relative;
-}
-.post.excerpt h2.title a {
-    color: #333;
-    font-weight: 400;
-    line-height: 140%;
-    font-size: 25px;
-}
 </style>
