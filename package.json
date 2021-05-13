@@ -13,6 +13,7 @@
     "bootstrap-vue": "^2.18.1",
     "core-js": "^3.6.5",
     "material-kit": "^2.0.4",
+    "moment": "^2.29.1",
     "prismjs": "^1.22.0",
     "vue": "^2.6.11",
     "vue-analytics": "^5.22.1",
