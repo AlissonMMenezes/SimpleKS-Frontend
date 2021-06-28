@@ -14,7 +14,7 @@
     "core-js": "^3.6.5",
     "material-kit": "^2.0.4",
     "moment": "^2.29.1",
-    "prismjs": "^1.23.0",
+    "prismjs": "^1.24.0",
     "vue": "^2.6.11",
     "vue-analytics": "^5.22.1",
     "vue-code-highlight": "^0.7.6",
